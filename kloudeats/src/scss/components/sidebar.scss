@@ -1,0 +1,65 @@
+@import "~bootstrap/scss/mixins";
+@import "variables";
+
+/* Inner with side nav */
+.sidebar {
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  overflow-y: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: var(--header-height);
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-transform: translateX(105%) !important;
+  -ms-transform: translateX(105%) !important;
+  transform: translateX(105%) !important;
+
+  &.show {
+    -webkit-transform: translateX(0px) !important;
+    -ms-transform: translateX(0px) !important;
+    transform: translateX(0px) !important;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: var(--cart-width-lg);
+    -webkit-transform: translateX(0px) !important;
+    -ms-transform: translateX(0px) !important;
+    transform: translateX(0px) !important;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: var(--cart-width-xl);
+    -webkit-transform: translateX(0px) !important;
+    -ms-transform: translateX(0px) !important;
+    transform: translateX(0px) !important;
+  }
+}
+
+.with-sidebar {
+  .content {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5rem;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      width: calc(100% - var(--cart-width-lg));
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: calc(100% - var(--cart-width-xl));
+    }
+  }
+}

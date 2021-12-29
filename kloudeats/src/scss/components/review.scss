@@ -1,0 +1,15 @@
+@import "variables";
+
+.review-stars {
+  direction: rtl;
+
+  .fa-star {
+    &.active, &:hover, &:focus, &:active {
+      color: var(--color-yellow);
+
+      ~ :before {
+        color: var(--color-yellow);
+      }
+    }
+  }
+}

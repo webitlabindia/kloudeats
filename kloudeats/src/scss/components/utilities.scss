@@ -1,0 +1,63 @@
+@import "variables";
+
+/* styles for '...' */
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em;
+
+  &:before {
+    /* create the ... */
+    /* points in the end */
+    content: '...';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0;
+    bottom: 0;
+  }
+
+  &:after {
+    /* hide ... if we have text, which is less than or equal to max lines */
+    /* points in the end */
+    content: "";
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    /* set width and height */
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    /* bg color = bg color under block */
+    background: white;
+
+  }
+}
+
+#scrollToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 70px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 1010; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: $primary; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 50px;
+  height: 50px;
+}
+
+#scrollToTop:hover {
+  background-color: darken($primary, 20%); /* Add a dark-grey background on hover */
+}
+

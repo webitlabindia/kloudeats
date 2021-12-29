@@ -1,0 +1,129 @@
+@import "_variables.scss";
+@import "~bootstrap/scss/mixins";
+
+
+
+#form-wrapper {
+	width: 100%;
+  @include flexprob;
+}
+form {
+	width: 100%;
+	max-width: 500px;
+	#range-rating-slider {
+		@include flexrow;
+		width: 100%;
+		height: 50px;
+		user-select: none;
+		&::before {
+			content: " ";
+			position: absolute;
+			height: 2px;
+			width: 79%;
+    top: 50%;
+    left: 40%;
+			transform: translate(-50%, -50%);
+			background: var(--color-dark);
+		}
+		input, label {
+			box-sizing: border-box;
+			flex: 1;
+			user-select: none;
+			cursor: pointer;
+		}
+		label {
+			display: inline-block;
+			position: relative;
+			width: 70%;
+			height: 100%;
+			user-select: none;
+			&::before {
+				content: attr(data-debt-amount);
+				position: absolute;
+				left: -12%;
+				padding-top: 10px;
+        transform: translate(-5px, -19px);
+				font-size: 14px;
+				letter-spacing: 0.4px;
+				font-weight: 400;
+				white-space: nowrap;
+				opacity: 0.85;
+				transition: all 0.15s ease-in-out;
+			}
+			&::after {
+				content: " ";
+				position: absolute;
+				left: 0%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+        width: 14px;
+        height: 14px;
+        border: 2px solid #8f8c8c;
+        background: #fff;
+				border-radius: 50%;
+				pointer-events: none;
+				user-select: none;
+				z-index: 1;
+				cursor: pointer;
+				transition: all 0.15s ease-in-out;
+			}
+			&:hover::after {
+				transform: translate(-50%, -50%) scale(1.25);
+			}
+			span {
+				margin: -12px -11px;
+					display: block;
+					color: $primary;
+					font-weight: 600;
+					svg{
+						margin-left: 5px;
+						margin-top: -5px
+					}
+		}
+		}
+		input {
+			display: none;
+			position: absolute;
+      top: 17px;
+			&:checked {
+				+ label::before {
+					font-weight: 800;
+					opacity: 1;
+				}
+				+ label::after {
+          border-width: 10px;
+          background: $primary;
+          border-color: $primary;
+        
+				}
+				~ #debt-amount-pos {
+					opacity: 1;
+				}
+				+ label svg path {
+					fill: $star-active;
+					
+			}
+			}
+		}
+
+	}
+	&:valid {
+		#range-rating-slider {
+			input {
+				+ label span {
+					margin: -12px -11px;
+					display: block;
+					color: $primary;
+					font-weight: 600;
+				}
+				&:checked + label span {
+        
+					color: $primary;
+					
+				}
+			}
+		}
+	}
+
+
+}

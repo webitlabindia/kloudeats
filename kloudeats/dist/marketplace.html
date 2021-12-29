@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="referrer" content="no-referrer-when-downgrade">
+      <title>KloudEats</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <!-- Default Template Style -->
+      <link rel="stylesheet" type="text/css" href="css/app.css?v=1.0.0">
+      <title>Mrketplace</title>
+   </head>
+   <body>
+      <div id="app">
+         <div class="markplace-container">
+         <header>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+               <div class="mobile-header">
+               <div class="col-md-6">
+                  <a class="navbar-brand" href="#"><img src="images/logo/logo.png" class="img-fluid home-logo" alt="LOGO"></a>
+                  </div>
+               <div class="col-md-6">
+                  <a class="account-but btn  text-primary text-right rounded-pill me-2 py-2 btn-sign">Logout</a><a class="btn btn-primary text-light  rounded-pill py-2 btn-sign"><svg id="Group_82" data-name="Group 82" xmlns="http://www.w3.org/2000/svg" width="29.811" height="17.775" viewBox="0 0 29.811 25.775">
+                   <path id="Path_127" data-name="Path 127" d="M22.966,11.5,17.03,2.59a1.344,1.344,0,0,0-1.125-.57,1.323,1.323,0,0,0-1.125.584L8.846,11.5H2.355A1.361,1.361,0,0,0,1,12.857a1.146,1.146,0,0,0,.054.367L4.5,25.813A2.7,2.7,0,0,0,7.1,27.8H24.714a2.724,2.724,0,0,0,2.615-1.983l3.442-12.589.041-.367A1.361,1.361,0,0,0,29.456,11.5Zm-11.125,0,4.065-5.975L19.971,11.5Zm4.065,10.864a2.716,2.716,0,1,1,2.71-2.716A2.721,2.721,0,0,1,15.906,22.363Z" transform="translate(-1 -2.02)" fill="#fff"/>
+                 </svg>
+                 (5)items</a>
+                </div>
+               </div>
+
+
+              <div class="col-md-5 col-sm-12 d-flex p-0">
+              <a class="hide-mobile navbar-brand" href="#"><img src="images/logo/logo.png" class="img-fluid home-logo" alt="LOGO"></a>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <div class=" navbar-collapse" id="">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li>
+                    <div class="switch6">
+                      <label class="switch6-light" onclick="">
+                          <input type="checkbox">
+                          <span>
+                            <span>Delivery</span>
+                            <span>Pickup</span>
+                          </span>
+                          <a class="btn btn-primary"></a>
+                      </label>
+                    </div>
+              
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="12.857" height="18" viewBox="0 0 12.857 18">
+                        <path id="location" d="M1414.317,1344a6.432,6.432,0,0,0-6.429,6.429,11.251,11.251,0,0,0,1.221,4.189,69.538,69.538,0,0,0,3.544,6.411,1.917,1.917,0,0,0,3.337,0,68.672,68.672,0,0,0,3.538-6.409,11.27,11.27,0,0,0,1.218-4.188A6.431,6.431,0,0,0,1414.317,1344Zm0,1.286a5.145,5.145,0,0,1,5.143,5.143,9.971,9.971,0,0,1-1.1,3.654,67.651,67.651,0,0,1-3.476,6.291l-.01.017a.632.632,0,0,1-1.1,0l-.01-.017a68.227,68.227,0,0,1-3.482-6.292,9.954,9.954,0,0,1-1.1-3.654A5.146,5.146,0,0,1,1414.317,1345.286Zm0,2.572a2.571,2.571,0,1,0,2.572,2.571A2.572,2.572,0,0,0,1414.321,1347.857Zm0,1.286a1.286,1.286,0,1,1-1.286,1.286A1.286,1.286,0,0,1,1414.321,1349.143Z" transform="translate(-1407.888 -1344)" fill="#2e4765" fill-rule="evenodd"/>
+                      </svg>
+                      Houston<svg xmlns="http://www.w3.org/2000/svg" width="13.073" height="7.475" viewBox="0 0 13.073 7.475">
+                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.726,16.468l4.943-4.947a.93.93,0,0,1,1.319,0,.942.942,0,0,1,0,1.323l-5.6,5.6a.933.933,0,0,1-1.288.027L6.46,12.848a.934.934,0,0,1,1.319-1.323Z" transform="translate(-6.188 -11.246)" fill="#dc4238"/>
+                      </svg>
+                      
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                </div>
+              </div>
+                
+                <div class="col-md-7 col-sm-7 search-byname text-right d-flex p-3">
+                  <div class="container justify-content-center">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="input-group"> <input type="text" class="form-control input-text" placeholder="Search by name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append"> <button class="btn btn-outline-warning btn-lg" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21.172" height="21.172" viewBox="0 0 21.172 21.172">
+                                 <path id="ic_search_white" d="M309.923,64.308h-.968l-.363-.363a7.572,7.572,0,0,0,1.936-5.081,7.864,7.864,0,1,0-7.864,7.864,7.572,7.572,0,0,0,5.081-1.936l.363.363v.968l6.049,6.049,1.815-1.815Zm-7.259,0a5.444,5.444,0,1,1,5.444-5.444A5.422,5.422,0,0,1,302.664,64.308Z" transform="translate(-294.8 -51)" fill="#2e4765"/>
+                               </svg>
+                               </button> </div>
+                            </div>
+                        </div>
+                        <div class="hide-mobile col-md-4">
+                          <a class="account-but btn text-primary text-right rounded-pill me-2  py-2 btn-sign">Logout</a><a class="btn btn-primary rounded-pill  py-2 btn-sign"><svg id="Group_82" data-name="Group 82" xmlns="http://www.w3.org/2000/svg" width="29.811" height="25.775" viewBox="0 0 29.811 25.775">
+                           <path id="Path_127" data-name="Path 127" d="M22.966,11.5,17.03,2.59a1.344,1.344,0,0,0-1.125-.57,1.323,1.323,0,0,0-1.125.584L8.846,11.5H2.355A1.361,1.361,0,0,0,1,12.857a1.146,1.146,0,0,0,.054.367L4.5,25.813A2.7,2.7,0,0,0,7.1,27.8H24.714a2.724,2.724,0,0,0,2.615-1.983l3.442-12.589.041-.367A1.361,1.361,0,0,0,29.456,11.5Zm-11.125,0,4.065-5.975L19.971,11.5Zm4.065,10.864a2.716,2.716,0,1,1,2.71-2.716A2.721,2.721,0,0,1,15.906,22.363Z" transform="translate(-1 -2.02)" fill="#fff"/>
+                         </svg>
+                         (5)items</a>
+                        </div>
+                    </div>
+                </div>
+                  </div>
+              </div>
+            </div>
+          </nav>
+         
+         </header>
+<div class="mar-wrap">
+   <div class="container-lg p-0 pt-0">
+<div class="row">
+ 
+<div class="col-md-4 col-sm-12">
+   <div class="mar-wrap">
+<div class="price-range mar-style-wrap">
+<h4>Price Range</h4>
+<div class="Range-but d-grid gap-4 d-md-block">
+   <button type="button" class="btn btn-lg btn-light">$</button>
+   <button type="button" class="btn btn-lg btn-danger">$$</button>
+   <button type="button" class="btn btn-lg btn-danger">$$$</button>
+   <button type="button" class="btn btn-lg btn-light">$$$$</button>
+</div>
+</div>
+
+<div class="rating-range mar-style-wrap">
+   <h4>Rating</h4>
+   <div id="form-wrapper">
+      <form>
+         <div id="range-rating-slider">
+            <input type="radio" name="debt-amount" id="1" value="1" required>
+            <label for="1" ><span>3<svg xmlns="http://www.w3.org/2000/svg" width="12.032" height="11.516" viewBox="0 0 12.032 11.516">
+               <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M6.812.4,5.343,3.377l-3.286.479a.72.72,0,0,0-.4,1.228L4.037,7.4l-.562,3.272a.719.719,0,0,0,1.044.758L7.457,9.886,10.4,11.431a.72.72,0,0,0,1.044-.758L10.878,7.4l2.377-2.316a.72.72,0,0,0-.4-1.228L9.571,3.377,8.1.4A.72.72,0,0,0,6.812.4Z" transform="translate(-1.441 0.001)" fill="#aeaeae"/>
+             </svg>
+             </span></label>
+            <input type="radio" name="debt-amount" id="2" value="2" required>
+            <label for="2"><span>3.5<svg xmlns="http://www.w3.org/2000/svg" width="12.032" height="11.516" viewBox="0 0 12.032 11.516">
+               <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M6.812.4,5.343,3.377l-3.286.479a.72.72,0,0,0-.4,1.228L4.037,7.4l-.562,3.272a.719.719,0,0,0,1.044.758L7.457,9.886,10.4,11.431a.72.72,0,0,0,1.044-.758L10.878,7.4l2.377-2.316a.72.72,0,0,0-.4-1.228L9.571,3.377,8.1.4A.72.72,0,0,0,6.812.4Z" transform="translate(-1.441 0.001)" fill="#aeaeae"/>
+             </svg>
+             </span></label>
+            <input type="radio" name="debt-amount" id="3" value="3" required>
+            <label for="3"><span>4<svg xmlns="http://www.w3.org/2000/svg" width="12.032" height="11.516" viewBox="0 0 12.032 11.516">
+               <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M6.812.4,5.343,3.377l-3.286.479a.72.72,0,0,0-.4,1.228L4.037,7.4l-.562,3.272a.719.719,0,0,0,1.044.758L7.457,9.886,10.4,11.431a.72.72,0,0,0,1.044-.758L10.878,7.4l2.377-2.316a.72.72,0,0,0-.4-1.228L9.571,3.377,8.1.4A.72.72,0,0,0,6.812.4Z" transform="translate(-1.441 0.001)" fill="#aeaeae"/>
+             </svg>
+             </span></label>
+            <input type="radio" name="debt-amount" id="4" value="4" required>
+            <label for="4"><span>4.5<svg xmlns="http://www.w3.org/2000/svg" width="12.032" height="11.516" viewBox="0 0 12.032 11.516">
+               <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M6.812.4,5.343,3.377l-3.286.479a.72.72,0,0,0-.4,1.228L4.037,7.4l-.562,3.272a.719.719,0,0,0,1.044.758L7.457,9.886,10.4,11.431a.72.72,0,0,0,1.044-.758L10.878,7.4l2.377-2.316a.72.72,0,0,0-.4-1.228L9.571,3.377,8.1.4A.72.72,0,0,0,6.812.4Z" transform="translate(-1.441 0.001)" fill="#aeaeae"/>
+             </svg>
+             </span></label>
+            <input type="radio" name="debt-amount" id="5" value="5" required>
+            <label for="5"><span>5<svg xmlns="http://www.w3.org/2000/svg" width="12.032" height="11.516" viewBox="0 0 12.032 11.516">
+               <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M6.812.4,5.343,3.377l-3.286.479a.72.72,0,0,0-.4,1.228L4.037,7.4l-.562,3.272a.719.719,0,0,0,1.044.758L7.457,9.886,10.4,11.431a.72.72,0,0,0,1.044-.758L10.878,7.4l2.377-2.316a.72.72,0,0,0-.4-1.228L9.571,3.377,8.1.4A.72.72,0,0,0,6.812.4Z" transform="translate(-1.441 0.001)" fill="#aeaeae"/>
+             </svg>
+             </span></label>
+            <div id="debt-amount-pos"></div>
+         </div>
+      </form>
+   
+   </div>
+
+
+
+
+   </div>
+   <div class="distance mar-style-wrap">
+      <h4>Distance</h4>
+      <div class="select">
+         <select class="form-select" aria-label="Default select example">
+            <option selected>Select Mile</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+      </div>
+      </div>
+      <div class="categories mar-style-wrap">
+         <h4>Categories</h4>
+         <div class="Cate-list">
+            <ul>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">All</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">Drinks</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">Break Fast</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">Lunch</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">Drinks</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-danger">Break Fast</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">Lunch</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">Desserts</button>
+               </li>
+               <li>
+                  <button type="button" class="btn btn-lg btn-light">Fastfood</button>
+               </li>
+            </ul>
+            
+         </div>
+         </div>
+</div>
+</div>
+<div class="col-lg-8 col-sm-12">
+    <div class="rest-menubar">
+       <h5>23 Restaurants</h5>
+    </div>
+    <div class="rest-box-item ">
+       <!-- Item Box -->
+      <div class="rest-box-items">
+         <div class="row">
+         <div class="col-md-5 col-sm-12"><img src="images/marketplace/mask-group-4.jpg" class="img-fluid img-partner mt-3 mt-md-0" alt="mask-group-4"></div>
+         <div class="col-md-7 col-sm-12 right-item">
+            <div class="head row">
+            <div class="col-md-6 text-start">
+               <h6>Risotto</h6>
+            </div>
+            <div class="col-md-6 text-end">
+               <strong>5 Miles</strong>
+            </div>
+         </div>
+            
+            <span><ul><li>4.3</li><li><img src="images/marketplace/icon-star.svg" class="img-fluid img-partner mt-3 mt-md-0" alt="Icon awesome-star"></li><li><i class="fas fa-circle"></i></li><li>Italian</li></ul> </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="bottom row">
+               <div class="col-md-6 text-start">
+                  <h6>$$$</h6>
+               </div>
+               <div class="col-md-6 text-end">
+                  <a href="#">Free Delivery</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Item Box -->
+   <!-- Item Box -->
+   <div class="rest-box-items">
+      <div class="row">
+      <div class="col-md-5 col-sm-12 "><img src="images/marketplace/mask-group-4.jpg" class="img-fluid img-partner mt-3 mt-md-0" alt="mask-group-4"></div>
+      <div class="col-md-7 col-sm-12  right-item">
+         <div class="head row">
+         <div class="col-md-6 text-start">
+            <h6>Risotto</h6>
+         </div>
+         <div class="col-md-6 text-end">
+            <strong>5 Miles</strong>
+         </div>
+      </div>
+         
+         <span><ul><li>4.3</li><li><img src="images/marketplace/icon-star.svg" class="img-fluid img-partner mt-3 mt-md-0" alt="Icon awesome-star"></li><li><i class="fas fa-circle"></i></li><li>Italian</li></ul> </span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         <div class="bottom row">
+            <div class="col-md-6 text-start">
+               <h6>$$$</h6>
+            </div>
+            <div class="col-md-6 text-end">
+               <a href="#">Free Delivery</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Item Box -->
+<!-- Item Box -->
+<div class="rest-box-items">
+   <div class="row">
+   <div class="col-md-5 col-sm-12 "><img src="images/marketplace/mask-group-4.jpg" class="img-fluid img-partner mt-3 mt-md-0" alt="mask-group-4"></div>
+   <div class="col-md-7 col-sm-12  right-item">
+      <div class="head row">
+      <div class="col-md-6 text-start">
+         <h6>Risotto</h6>
+      </div>
+      <div class="col-md-6 text-end">
+         <strong>5 Miles</strong>
+      </div>
+   </div>
+      
+      <span><ul><li>4.3</li><li><img src="images/marketplace/icon-star.svg" class="img-fluid img-partner mt-3 mt-md-0" alt="Icon awesome-star"></li><li><i class="fas fa-circle"></i></li><li>Italian</li></ul> </span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <div class="bottom row">
+         <div class="col-md-6 text-start">
+            <h6>$$$</h6>
+         </div>
+         <div class="col-md-6 text-end">
+            <a href="#">Free Delivery</a>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<!-- Item Box -->
+   <!-- Item Box -->
+   <div class="rest-box-items">
+      <div class="row">
+      <div class="col-md-5 col-sm-12 "><img src="images/marketplace/mask-group-4.jpg" class="img-fluid img-partner mt-3 mt-md-0" alt="mask-group-4"></div>
+      <div class="col-md-7 col-sm-12  right-item">
+         <div class="head row">
+         <div class="col-md-6 text-start">
+            <h6>Risotto</h6>
+         </div>
+         <div class="col-md-6 text-end">
+            <strong>5 Miles</strong>
+         </div>
+      </div>
+         
+         <span><ul><li>4.3</li><li><img src="images/marketplace/icon-star.svg" class="img-fluid img-partner mt-3 mt-md-0" alt="Icon awesome-star"></li><li><i class="fas fa-circle"></i></li><li>Italian</li></ul> </span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         <div class="bottom row">
+            <div class="col-md-6 text-start">
+               <h6>$$$</h6>
+            </div>
+            <div class="col-md-6 text-end">
+               <a href="#">Free Delivery</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Item Box -->
+   <!-- Item Box -->
+   <div class="rest-box-items">
+      <div class="row">
+      <div class="col-md-5 col-sm-12 "><img src="images/marketplace/mask-group-4.jpg" class="img-fluid img-partner mt-3 mt-md-0" alt="mask-group-4"></div>
+      <div class="col-md-7 col-sm-12  right-item">
+         <div class="head row">
+         <div class="col-md-6 text-start">
+            <h6>Risotto</h6>
+         </div>
+         <div class="col-md-6 text-end">
+            <strong>5 Miles</strong>
+         </div>
+      </div>
+         
+         <span><ul><li>4.3</li><li><img src="images/marketplace/icon-star.svg" class="img-fluid img-partner mt-3 mt-md-0" alt="Icon awesome-star"></li><li><i class="fas fa-circle"></i></li><li>Italian</li></ul> </span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         <div class="bottom row">
+            <div class="col-md-6 text-start">
+               <h6>$$$</h6>
+            </div>
+            <div class="col-md-6 text-end">
+               <a href="#">Free Delivery</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Item Box -->
+   <!-- Item Box -->
+   <div class="rest-box-items">
+      <div class="row">
+      <div class="col-md-5 col-sm-12 "><img src="images/marketplace/mask-group-4.jpg" class="img-fluid img-partner mt-3 mt-md-0" alt="mask-group-4"></div>
+      <div class="col-md-7 col-sm-12  right-item">
+         <div class="head row">
+         <div class="col-md-6 text-start">
+            <h6>Risotto</h6>
+         </div>
+         <div class="col-md-6 text-end">
+            <strong>5 Miles</strong>
+         </div>
+      </div>
+         
+         <span><ul><li>4.3</li><li><img src="images/marketplace/icon-star.svg" class="img-fluid img-partner mt-3 mt-md-0" alt="Icon awesome-star"></li><li><i class="fas fa-circle"></i></li><li>Italian</li></ul> </span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         <div class="bottom row">
+            <div class="col-md-6 text-start">
+               <h6>$$$</h6>
+            </div>
+            <div class="col-md-6 text-end">
+               <a href="#">Free Delivery</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Item Box -->
+   <!-- Item Box -->
+   <div class="rest-box-items">
+      <div class="row">
+      <div class="col-md-5 col-sm-12 "><img src="images/marketplace/mask-group-4.jpg" class="img-fluid img-partner mt-3 mt-md-0" alt="mask-group-4"></div>
+      <div class="col-md-7 col-sm-12  right-item">
+         <div class="head row">
+         <div class="col-md-6 text-start">
+            <h6>Risotto</h6>
+         </div>
+         <div class="col-md-6 text-end">
+            <strong>5 Miles</strong>
+         </div>
+      </div>
+         
+         <span><ul><li>4.3</li><li><img src="images/marketplace/icon-star.svg" class="img-fluid img-partner mt-3 mt-md-0" alt="Icon awesome-star"></li><li><i class="fas fa-circle"></i></li><li>Italian</li></ul> </span>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         <div class="bottom row">
+            <div class="col-md-6 text-start">
+               <h6>$$$</h6>
+            </div>
+            <div class="col-md-6 text-end">
+               <a href="#">Free Delivery</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Item Box -->
+    </div>
+    <nav class="text-end float-end" aria-label="...">
+      <ul class="pagination">
+        
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+        </li>
+      </ul>
+    </nav>
+</div>
+</div>
+</div>
+</div>           
+            <footer class="container-fluid mt-3 mt-md-0">
+               <div class="container">
+                  <div class="row footer-content py-5">
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                           <img src="images/logo/logo.png" class="img-fluid footer-logo" alt="Logo">
+                           <div class="section-title">
+                              <h5>Connect With Us</h5>
+                           </div>
+                           <div class="social-medias"><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a><a href="#"><i class="fab fa-youtube fa-lg"></i></a><a href="#"><i class="fab fa-twitter fa-lg"></i></a><a href="#"><i class="fab fa-instagram fa-lg"></i></a></div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="section-title">
+                           <h5>Get to Know Us</h5>
+                        </div>
+                        <ul>
+                          <li><a href="about-us.html">About Us</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="invest.html">Invest</a></li>
+                       </ul>
+                     </div>
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="section-title">
+                           <h5>Partner with Us</h5>
+                        </div>
+                        <ul>
+                           <li><a href="#">Add Your Restaurant</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="section-title">
+                           <h5>Let Us Help You</h5>
+                        </div>
+                        <ul>
+                           <li><a href="#">Account Details</a></li>
+                           <li><a href="#">Order History</a></li>
+                           <li><a href="#">Help</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer-bottom py-3">
+                     <div class="d-flex flex-column flex-md-row justify-content-md-center align-items-md-center">
+                        <a class="ps-md-3 pt-2 pt-md-0" href="https://www.kloudeats.com/terms-conditions">Terms of Service</a><a class="ps-md-3 pt-2 pt-md-0" href="https://www.kloudeats.com/privacy">Privacy</a>
+                        <div class="ps-md-3 pt-2 pt-md-0">©2021&nbsp;&nbsp;KloudEats</div>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <div class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable animate__animated animate__fadeIn">
+                  <div class="modal-content">
+                     <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="sign-container sign-modal pt-0 pb-3">
+                           <div class="d-flex flex-column">
+                              <div class="d-flex align-items-center">New to KloudEats? &nbsp;&nbsp;<a class="text-decoration-none">Sign Up</a></div>
+                              <form class="mt-3">
+                                 <div class="mb-2">
+                                    <div class="form-floating"><input id="email" name="email" type="email" class="form-control rounded-pill" placeholder="name@example.com" value=""><label for="email">Email</label></div>
+                                 </div>
+                                 <div class="mb-2">
+                                    <div class="input-password">
+                                       <div class="form-floating"><input id="password" name="password" type="password" class="form-control rounded-pill" aria-label="Password" placeholder="Password" value=""><label for="password">Password</label></div>
+                                       <div id="togglePassword" class="toggle-password">Show</div>
+                                    </div>
+                                 </div>
+                                 <div class="d-flex justify-content-between align-items-center px-1 my-3">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" checked=""><label class="form-check-label">Remember</label></div>
+                                    <div><a class="text-decoration-none" href="https://www.kloudeats.com/forgot-password">Forgot your password?</a></div>
+                                 </div>
+                                 <div class="d-grid my-3"><button type="button" class="btn btn-primary rounded-pill text-light">Sign In</button></div>
+                                 <div class="or">Or</div>
+                                 <div class="d-flex flex-column mt-3">
+                                    <a class="text-decoration-none mb-3" href="https://www.kloudeats.com/auth/google/redirect">
+                                       <div class="btn social-button social-google rounded-pill text-light px-3"><i class="fab fa-google fa-lg"></i>Continue with Google</div>
+                                    </a>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable animate__animated animate__fadeIn">
+                  <div class="modal-content">
+                     <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="sign-container sign-modal pt-0 pb-3">
+                           <div class="d-flex flex-column">
+                              <div class="d-flex align-items-center">Already have an account? &nbsp;&nbsp;<a class="text-decoration-none">Sign In</a></div>
+                              <form class="mt-3">
+                                 <div class="row mb-2">
+                                    <div class="col-md">
+                                       <div class="form-floating"><input id="firstName" name="first_name" type="text" class="form-control rounded-pill" value=""><label for="firstName">First Name <span class="text-danger">*</span></label></div>
+                                    </div>
+                                    <div class="col-md">
+                                       <div class="form-floating"><input id="lastName" name="last_name" type="text" class="form-control rounded-pill" value=""><label for="lastName">Last Name <span class="text-danger">*</span></label></div>
+                                    </div>
+                                 </div>
+                                 <div class="mb-2">
+                                    <div class="form-floating"><input id="email" name="email" type="email" class="form-control rounded-pill" value=""><label for="email">Email <span class="text-danger">*</span></label></div>
+                                 </div>
+                                 <div class="row mb-2">
+                                    <div class="col-4">
+                                       <div class="form-floating">
+                                          <select id="country" class="form-select rounded-pill" name="country" aria-label="Country">
+                                             <option value="1">+1</option>
+                                          </select>
+                                          <label for="country">Country</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-8">
+                                       <div class="form-floating"><input id="phone" name="phone_number" type="text" class="form-control rounded-pill" value=""><label for="phone">Phone Number <span class="text-danger">*</span></label></div>
+                                    </div>
+                                 </div>
+                                 <div class="mb-2">
+                                    <div class="input-password">
+                                       <div class="form-floating"><input id="password" name="password" type="password" class="form-control rounded-pill" aria-label="Password" value=""><label for="password">Password <span class="text-danger">*</span></label></div>
+                                       <div id="togglePassword" class="toggle-password">Show</div>
+                                    </div>
+                                    <div class="text-danger ms-1 mt-1">At least 8 characters.</div>
+                                 </div>
+                                 <div class="d-grid my-2"><button type="button" class="btn btn-primary text-light rounded-pill">Sign Up</button></div>
+                                 <div>By clicking Sign up, Continue with Google, you agree to our <br><a class="text-danger" href="#">Terms and Conditions</a>&nbsp;and&nbsp;<a class="text-danger" href="#">Privacy Statement.</a></div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="scrollToTop" title="Go to top">
+         <div class="h-100 d-flex justify-content-center align-items-center">
+            <i class="fa fa-angle-up fa-2x"></i>
+         </div>
+      </div>
+      <div class="pac-container pac-logo hdpi" style="display: none; width: 398px; position: absolute; left: 696px; top: 386px;"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>

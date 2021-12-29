@@ -1,0 +1,98 @@
+@import "variables";
+@import "~bootstrap/scss/mixins";
+
+.home-container {
+  > .banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url("../../dist/images/bg.png");
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    min-height: 600px;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+
+    .address-input-container {
+      position: absolute;
+      top: calc(40% - 2.5rem / 2);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .address-input {
+        min-width: 300px;
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+          min-width: 400px;
+        }
+
+        > input {
+          line-height: 2.5rem;
+          padding-left: 2.5rem;
+          padding-right: 2.5rem;
+          border-radius: 1.5rem;
+        }
+
+        .address-map-marker {
+          position: absolute;
+          left: 0.75rem;
+          top: 0.75rem;
+          color: black;
+        }
+
+        .btn-set-address {
+          position: absolute;
+          right: 0.5rem;
+          top: 0.5rem;
+
+          height: calc(2.5rem);
+          width: calc(2.5rem);
+          border-radius: 50%;
+          background-color: black;
+          color: white;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .home-logo {
+    width: 100px;
+
+    @include media-breakpoint-up(md) {
+      width: 300px;
+    }
+  }
+
+  .section-partner {
+    .img-partner {
+      width: 300px;
+
+      @include media-breakpoint-up(md) {
+        width: 500px;
+      }
+    }
+  }
+
+  a.btn {
+    color: var(--color-dark);
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  a.btn-login {
+    font-weight: 700;
+    line-height: 1rem;
+  }
+}
+

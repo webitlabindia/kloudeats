@@ -1,0 +1,210 @@
+@import "variables";
+@import "~bootstrap/scss/mixins";
+
+.cart-container {
+  z-index: 50;
+  background-color: var(--color-white);
+  height: calc(100vh - var(--header-height));
+}
+
+.cart-container .cart-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.cart-container .cart-body h2.title {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.75rem;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.cart-container .cart-body .cart-items {
+  max-height: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.cart-container .cart-body .cart-items .cart-items-header div {
+  width: 100%;
+  font-weight: 700;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+}
+
+.cart-container .cart-body .cart-items .cart-items-header div:first-child {
+  max-width: 50px;
+}
+
+.cart-container .cart-body .cart-items .cart-items-header div:last-child {
+  text-align: right;
+  max-width: 100px;
+}
+
+.cart-container .cart-body .cart-items .cart-items-list {
+  overflow-y: auto;
+  max-height: 100%;
+  padding: 5px 0;
+}
+
+.cart-container .cart-body .cart-items {
+  .cart-items-list .cart-item {
+    div.item-qty {
+      width: 50px;
+
+      .btn-item-qty {
+        width: 30px;
+        height: 30px;
+        font-size: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    div.item-desc {
+      word-break: break-all;
+    }
+
+    div.item-remove a {
+      color: var(--color-primary);
+    }
+
+    div.item-remove a:hover {
+      color: $link-hover-color;
+    }
+
+    div.item-amount {
+      width: 80px;
+      font-weight: bold;
+      line-height: 1rem;
+      font-size: 1rem;
+    }
+
+    div .item-edit {
+      color: $primary;
+      font-size: 1rem;
+    }
+
+    div .item-edit:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  .cart-empty {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    div {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      color: #BDBDBD;
+    }
+  }
+}
+
+.cart-container .cart-body .cart-items .cart-empty h1 {
+  font-weight: bold;
+  line-height: 3rem;
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.cart-container .cart-body .cart-items .cart-empty p {
+  font-weight: 700;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.cart-container .cart-body .cart-items .cart-items-option {
+  text-align: right;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cart-container .cart-body .cart-items .cart-items-option a {
+  display: inline-block;
+  color: $primary;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 0.9375rem;
+}
+
+.cart-container .cart-body .cart-items .cart-items-option a:hover {
+  color: $link-hover-color;
+}
+
+.cart-container .cart-body .cart-compute {
+  align-content: flex-end;
+  padding-bottom: 15px;
+}
+
+.cart-container .cart-body .cart-compute .compute-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-container .cart-body .cart-compute .compute-item div {
+  width: 100%;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.cart-container .cart-body .cart-compute .compute-item div.compute-amount {
+  text-align: right;
+  font-weight: bold;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.cart-container .cart-body .cart-compute .compute-item.total {
+  margin-top: 25px;
+}
+
+.cart-container .cart-body .cart-compute .compute-item.total div {
+  font-size: 1.50rem;
+  line-height: 1.50rem;
+}
+
+.cart-container .cart-body .cart-compute .compute-item.total div.compute-amount {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.cart-container {
+  .cart-body {
+    .cart-items {
+      .cart-items-list {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

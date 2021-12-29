@@ -1,0 +1,39 @@
+@import "variables";
+
+.profile-container {
+  max-width: 500px;
+  min-height: 100vh;
+
+  .profile-section {
+    .nav-tabs {
+      border-bottom: none;
+
+      .nav-item {
+        .nav-link {
+          color: #495057;
+          background-color: transparent;
+          border-color: transparent;
+          cursor: pointer;
+
+          &.active {
+            border-bottom: solid 2px var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+
+  .input-password {
+    position: relative;
+
+    > .toggle-password {
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

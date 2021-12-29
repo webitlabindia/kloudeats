@@ -1,0 +1,133 @@
+@import "variables";
+@import "~bootstrap/scss/mixins";
+
+.location-list {
+  .location-item {
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+
+    .location-thumbnail {
+      overflow: hidden;
+      padding: 0 5px;
+      border-radius: 15px;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .location-text {
+      font-family: "Exo 2", "Lato", sans-serif;
+      font-weight: lighter;
+      color: $gray-900;
+    }
+  }
+}
+
+.location-container {
+  .location-header {
+    position: relative;
+    margin-bottom: 60px;
+
+    .location-banner {
+      padding-top: 30px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 250px;
+    }
+
+    .location-thumbnail {
+      position: absolute;
+      height: 120px;
+      width: 120px;
+      left: 15px;
+      bottom: -60px;
+    }
+
+    @include media-breakpoint-down(md) {
+      .location-thumbnail {
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        left: 15px;
+        bottom: -30px;
+      }
+    }
+  }
+
+  .location-info {
+    .location-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .location-spec-item {
+      font-weight: lighter;
+    }
+
+    .location-spec-item::after {
+      content: "\2022";
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  .location-menu {
+    > .scrollspy {
+      &:active, &:focus, &:hover {
+        outline: none;
+      }
+    }
+
+    .dropdown-menu {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .nav-item.active {
+      a {
+        font-weight: bolder;
+      }
+    }
+
+    .nav-link.active {
+      text-decoration: underline $secondary solid 2px;
+    }
+
+    .location-menu-nav {
+      width: 100%;
+      height: 50px;
+      white-space: nowrap;
+      overflow-x: auto;
+
+      > li {
+        display: inline;
+      }
+    }
+
+    .location-menu-list {
+      .scrollspy {
+        outline: none;
+      }
+
+      .location-menu-category-title {
+        border-bottom: 2px solid $secondary;
+      }
+
+      .location-menu-item-group {
+        .location-menu-item {
+          .location-menu-item-info {
+            .location-menu-item-img {
+              width: 150px;
+              text-align: right;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}

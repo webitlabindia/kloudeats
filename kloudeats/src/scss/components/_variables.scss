@@ -1,0 +1,92 @@
+:root {
+  --color-dark: #000;
+  --color-white: #FFF;
+  --color-primary: #e3625a;
+  --color-yellow: #e8ca71;
+  --header-height: 75px;
+  --cart-width-lg: 300px;
+  --cart-width-xl: 400px;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0 solid;
+  border-right: 0 solid transparent;
+  border-bottom: 0;
+  border-left: 0 solid transparent;
+}
+@mixin flexprob {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+@mixin flexrow {
+    display: flex;
+		flex-direction: row;
+		align-content: stretch;
+		position: relative;
+}
+@mixin flexboxmobie {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$primary: #dc4238;
+$border-line: #D6D6D6;
+$textColor: #2E4765;
+$buttonlight: #f4f9ff;
+$headinSmall: #4A4A4A;
+$buttonbor: #D6D6D6;
+$buttonlig :#C7C7C7;
+$rest-box : #DBDBDB;
+$rest-shadow: #ccc;
+$star-active: #ffaa00;

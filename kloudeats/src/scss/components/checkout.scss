@@ -1,0 +1,62 @@
+@import "variables";
+
+.checkout-container {
+  .checkout-back a {
+    cursor: pointer;
+    color: $secondary;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .checkout-info {
+    margin-bottom: 5px;
+
+    .checkout-title {
+      font-weight: 700;
+    }
+
+    .checkout-options {
+      a {
+        cursor: pointer;
+      }
+
+      > .tip-suggestions {
+        border-radius: 0.5rem;
+
+        a {
+          &:first-child {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+
+          &.active {
+            background-color: $dark;
+            color: $light;
+          }
+        }
+      }
+
+      > .tip-input {
+        margin-top: 10px;
+
+        input {
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+        }
+      }
+    }
+  }
+
+  .instruction-textarea {
+    min-height: 200px;
+  }
+
+  .card-form-label {
+    width: 100px;
+  }
+}

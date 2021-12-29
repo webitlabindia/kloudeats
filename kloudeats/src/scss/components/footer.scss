@@ -1,0 +1,54 @@
+footer {
+  background-color: $dark;
+  color: $white;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $white;
+  }
+
+  .footer-content {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--color-dark);
+
+    .footer-logo {
+      width: 400px;
+    }
+
+    .footer-section {
+      ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          font-size: 1em;
+          padding-top: 10px;
+
+          &:before {
+            font-family: "Font Awesome 5 Free", serif;
+            font-weight: 700;
+            content: "\f0da";
+            padding-right: 5px;
+            color: var(--color-primry);
+          }
+        }
+      }
+
+      .social-medias {
+        display: flex;
+
+        a {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    .footer-logo {
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/* ./resources/css/app.css */
+@import "components/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "components/fontawesome";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@import "~toastr/toastr";
+@import "components/searchbox";
+@import "components/loader";
+@import "components/utilities";
+@import "components/paginator";
+@import "components/nav";
+@import "components/header";
+@import "components/footer";
+@import "components/sidebar";
+@import "components/cart";
+@import "components/home";
+@import "components/filter";
+@import "components/location";
+@import "components/menu";
+@import "components/auth";
+@import "components/checkout";
+@import "components/purchased";
+@import "components/profile";
+@import "components/modal";
+@import "components/review";
+@import "components/marketplace";
+@import "components/rangeslider";
+

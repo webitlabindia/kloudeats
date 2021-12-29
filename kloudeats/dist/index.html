@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="referrer" content="no-referrer-when-downgrade">
+      <title>KloudEats</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      <!-- Default Template Style -->
+      <link rel="stylesheet" type="text/css" href="css/app.css?v=1.0.0">
+      <title>KloudEats</title>
+   </head>
+   <body>
+      <div id="app">
+         <div class="home-container">
+            <div class="banner">
+               <div class="d-flex justify-content-between align-items-center">
+                  <img src="images/logo/logo.png" class="img-fluid home-logo" alt="LOGO">
+                  <div class="d-flex p-3"><a data-bs-toggle="modal" href="#login_popup" class="btn btn-light text-primary rounded-pill me-2 fw-light py-2 btn-sign">SIGN IN</a><a data-bs-toggle="modal" href="#signup_popup" class="btn btn-primary text-light rounded-pill fw-light py-2 btn-sign">SIGN UP</a></div>
+               </div>
+               <div class="address-input-container">
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h1 class="text-uppercase text-light fw-bolder mb-3 px-3">Restaurant and more,<br>Deliver to your door.</h1>
+                  </div>
+                  <div class="address-input">
+                     <div class="address-map-marker"><i class="fas fa-map-marker-alt fa-2x"></i></div>
+                     <input type="text" class="form-control pac-target-input" placeholder="Enter the Address to Find the restaurants" aria-label="delivery address" autocomplete="off">
+                     <div class="btn-set-address"><i class="fas fa-arrow-right fa-lg"></i></div>
+                  </div>
+               </div>
+            </div>
+            <div class="container mt-3">
+               <div class="row">
+                  <div class="col-12 col-md-6 d-flex align-items-stretch">
+                     <div class="bg-light w-100 rounded d-flex align-items-center justify-content-center py-5">
+                        <div class="d-flex flex-column">
+                           <h4 class="text-uppercase text-primary fw-bolder">Become a</h4>
+                           <h1 class="text-uppercase text-primary fw-bolder">Partner</h1>
+                           <h5 class="fw-light mb-3">Grow your business and reach<br>new customers by partnering<br>with us.<br></h5>
+                           <a href="https://merchant.kloudeats.com" class="btn btn-outline-primary rounded-pill text-dark" target="_blank">Sign Up Your Store</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6"><img src="images/home/mask-group-5.png" class="img-fluid img-partner mt-3 mt-md-0" alt="Partner"></div>
+               </div>
+            </div>
+            <footer class="container-fluid mt-3 mt-md-5">
+               <div class="container">
+                  <div class="row footer-content py-5">
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                           <img src="images/logo/logo.png" class="img-fluid footer-logo" alt="Logo">
+                           <div class="section-title">
+                              <h5>Connect With Us</h5>
+                           </div>
+                           <div class="social-medias"><a href="#"><i class="fab fa-facebook-square fa-lg"></i></a><a href="#"><i class="fab fa-youtube fa-lg"></i></a><a href="#"><i class="fab fa-twitter fa-lg"></i></a><a href="#"><i class="fab fa-instagram fa-lg"></i></a></div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="section-title">
+                           <h5>Get to Know Us</h5>
+                        </div>
+                        <ul>
+                           <li><a href="about-us.html">About Us</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="invest.html">Invest</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="section-title">
+                           <h5>Partner with Us</h5>
+                        </div>
+                        <ul>
+                           <li><a href="#">Add Your Restaurant</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-12 col-md-3 footer-section mb-3 mb-md-0">
+                        <div class="section-title">
+                           <h5>Let Us Help You</h5>
+                        </div>
+                        <ul>
+                           <li><a href="#">Account Details</a></li>
+                           <li><a href="#">Order History</a></li>
+                           <li><a href="#">Help</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer-bottom py-3">
+                     <div class="d-flex flex-column flex-md-row justify-content-md-center align-items-md-center">
+                        <a class="ps-md-3 pt-2 pt-md-0" href="https://www.kloudeats.com/terms-conditions">Terms of Service</a><a class="ps-md-3 pt-2 pt-md-0" href="https://www.kloudeats.com/privacy">Privacy</a>
+                        <div class="ps-md-3 pt-2 pt-md-0">©2021&nbsp;&nbsp;KloudEats</div>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <div class="modal fade" tabindex="-1" id="login_popup" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable animate__animated animate__fadeIn">
+                  <div class="modal-content">
+                     <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="sign-container sign-modal pt-0 pb-3">
+                           <div class="d-flex flex-column">
+                              <div class="d-flex align-items-center">New to KloudEats? &nbsp;&nbsp;<a class="text-decoration-none">Sign Up</a></div>
+                              <form class="mt-3">
+                                 <div class="mb-2">
+                                    <div class="form-floating"><input id="email" name="email" type="email" class="form-control rounded-pill" placeholder="name@example.com" value=""><label for="email">Email</label></div>
+                                 </div>
+                                 <div class="mb-2">
+                                    <div class="input-password">
+                                       <div class="form-floating"><input id="password" name="password" type="password" class="form-control rounded-pill" aria-label="Password" placeholder="Password" value=""><label for="password">Password</label></div>
+                                       <div id="togglePassword" class="toggle-password">Show</div>
+                                    </div>
+                                 </div>
+                                 <div class="d-flex justify-content-between align-items-center px-1 my-3">
+                                    <div class="form-check"><input class="form-check-input" type="checkbox" checked=""><label class="form-check-label">Remember</label></div>
+                                    <div><a class="text-decoration-none" href="https://www.kloudeats.com/forgot-password">Forgot your password?</a></div>
+                                 </div>
+                                 <div class="d-grid my-3"><button type="button" class="btn btn-primary rounded-pill text-light">Sign In</button></div>
+                                 <div class="or">Or</div>
+                                 <div class="d-flex flex-column mt-3">
+                                    <a class="text-decoration-none mb-3" href="https://www.kloudeats.com/auth/google/redirect">
+                                       <div class="btn social-button social-google rounded-pill text-light px-3"><i class="fab fa-google fa-lg"></i>Continue with Google</div>
+                                    </a>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="modal fade" id="signup_popup" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable animate__animated animate__fadeIn">
+                  <div class="modal-content">
+                     <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <div class="sign-container sign-modal pt-0 pb-3">
+                           <div class="d-flex flex-column">
+                              <div class="d-flex align-items-center">Already have an account? &nbsp;&nbsp;<a class="text-decoration-none">Sign In</a></div>
+                              <form class="mt-3">
+                                 <div class="row mb-2">
+                                    <div class="col-md">
+                                       <div class="form-floating"><input id="firstName" name="first_name" type="text" class="form-control rounded-pill" value=""><label for="firstName">First Name <span class="text-danger">*</span></label></div>
+                                    </div>
+                                    <div class="col-md">
+                                       <div class="form-floating"><input id="lastName" name="last_name" type="text" class="form-control rounded-pill" value=""><label for="lastName">Last Name <span class="text-danger">*</span></label></div>
+                                    </div>
+                                 </div>
+                                 <div class="mb-2">
+                                    <div class="form-floating"><input id="email" name="email" type="email" class="form-control rounded-pill" value=""><label for="email">Email <span class="text-danger">*</span></label></div>
+                                 </div>
+                                 <div class="row mb-2">
+                                    <div class="col-4">
+                                       <div class="form-floating">
+                                          <select id="country" class="form-select rounded-pill" name="country" aria-label="Country">
+                                             <option value="1">+1</option>
+                                          </select>
+                                          <label for="country">Country</label>
+                                       </div>
+                                    </div>
+                                    <div class="col-8">
+                                       <div class="form-floating"><input id="phone" name="phone_number" type="text" class="form-control rounded-pill" value=""><label for="phone">Phone Number <span class="text-danger">*</span></label></div>
+                                    </div>
+                                 </div>
+                                 <div class="mb-2">
+                                    <div class="input-password">
+                                       <div class="form-floating"><input id="password" name="password" type="password" class="form-control rounded-pill" aria-label="Password" value=""><label for="password">Password <span class="text-danger">*</span></label></div>
+                                       <div id="togglePassword" class="toggle-password">Show</div>
+                                    </div>
+                                    <div class="text-danger ms-1 mt-1">At least 8 characters.</div>
+                                 </div>
+                                 <div class="d-grid my-2"><button type="button" class="btn btn-primary text-light rounded-pill">Sign Up</button></div>
+                                 <div>By clicking Sign up, Continue with Google, you agree to our <br><a class="text-danger" href="#">Terms and Conditions</a>&nbsp;and&nbsp;<a class="text-danger" href="#">Privacy Statement.</a></div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="scrollToTop" title="Go to top">
+         <div class="h-100 d-flex justify-content-center align-items-center">
+            <i class="fa fa-angle-up fa-2x"></i>
+         </div>
+      </div>
+      <div class="pac-container pac-logo hdpi" style="display: none; width: 398px; position: absolute; left: 696px; top: 386px;"></div>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   </body>
+</html>

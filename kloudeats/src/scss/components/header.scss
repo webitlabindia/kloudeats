@@ -1,0 +1,186 @@
+@import "_variables.scss";
+@import "~bootstrap/scss/mixins";
+
+
+
+input:focus, textarea:focus, select:focus{
+	outline: none;
+}
+header {
+  padding: 29px 0 24px;
+  border-bottom: 1px solid $border-line;
+}
+
+.switch6 {
+	border-radius: 30px;
+	background: $primary;
+  .btn-primary {
+    color: $white;
+    background-color: $white;
+    border-color: $primary;
+}
+}
+
+// Change color of the On span when checkbox checked
+.switch6-light input:not(:checked) + span span:first-child {
+  color: $primary;
+}
+// Change color of the Off span when checkbox not checked
+.switch6-light input:checked + span span:last-child {
+  color: $primary;
+}
+
+
+.switch6-light {
+	>span {
+		color: $textColor;
+    line-height: 36px;
+    vertical-align: middle;
+    position: absolute;
+    left: -100px;
+    width: 100%;
+    margin: 0px;
+    padding-right: 100px;
+    text-align: left;
+    font-size: 16px;
+		span {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 5;
+			display: block;
+			width: 50%;
+			margin-left: 100px;
+			text-align: center;
+			&:last-child {
+				left: 50%;
+			}
+		}
+	}
+	span {
+		span {
+			color: $white;
+		}
+	}
+	label {
+		color: $textColor;
+		line-height: 30px;
+		vertical-align: middle;
+		font-weight: 700;
+		max-width: 100%;
+	}
+	display: block;
+    height: 36px;
+    position: relative;
+    overflow: visible;
+    margin-left: 0px;
+    padding: 0 78px;
+	a {
+		display: block;
+		transition: all 0.3s ease-out 0s;
+		position: absolute;
+		right: 50%;
+		top: 0px;
+		z-index: 4;
+		display: block;
+		width: 50%;
+		height: 100%;
+		padding: 0px;
+		border-radius: 30px;
+	}
+	input {
+		&:focus {
+			~ {
+				a {
+					outline: 0px solid $primary;
+				}
+			}
+			+ {
+				label {
+					outline: 0px solid $primary;
+				}
+			}
+		}
+		position: absolute;
+		opacity: 0;
+		z-index: 5;
+		&:checked {
+			~ {
+				a {
+					right: 0%;
+				}
+			}
+		}
+		:not(:checked) + span span:first-child {
+			color: $primary;
+		}
+	}
+}
+.switch-toggle {
+	>span {
+		color: $primary;
+	}
+	span {
+		span {
+			color: $headinSmall;
+		}
+	}
+	label {
+		color: $headinSmall;
+	}
+	a {
+		display: none;
+	}
+}
+li.nav-item.dropdown a {
+	border: 0px solid $primary;
+	border-radius: 30px;
+	padding: 4px 16px;
+	background: $white;
+	font-weight: 500;
+	font-size: 16px;
+}
+li.nav-item.dropdown a.dropdown-toggle {
+	border: 1px solid $primary;
+	border-radius: 30px;
+	padding: 6px 12px;
+	background: $white;
+	font-weight: 500;
+	font-size: 16px;
+}
+li.nav-item.dropdown a svg:last-child {
+  margin-left: 8px;
+}
+.search-byname .input-group {
+  background: $buttonlight;
+  border-radius: 30px;
+  input {
+    background: $buttonlight;
+    border: 0;
+    border-radius: 30px;
+    padding: 0 9px;
+    height: auto;
+    color: $textColor;
+  }
+  button {
+    border: 0 !important;
+    background: transparent !important;
+		padding: 5px 16px;
+}
+}
+
+li.nav-item.dropdown {
+  margin-left: 17px;
+}
+a.account-but {
+  background: $white !important;
+  border: 1px solid $primary !important;
+  padding: 6px 19px !important;
+  font-weight: 600;
+}
+.rounded-pill {
+	padding: 6px 7px !important;
+}
+.btn-sign svg {
+    margin-top: -8px;
+}
